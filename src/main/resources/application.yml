@@ -1,0 +1,24 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+#      base-path: /admin
+  endpoint:
+    health:
+      show-details: always
+    prometheus:
+      enabled: true
+  info:
+    env:
+      enabled: true
+info:
+  app:
+    name: ActuatorDemo
+  description: String Boot Demo about Actuator
+  java:
+    version: 17
+logging:
+  level:
+    org.springframework.boot.actuate.endpoint.web: DEBUG
+
